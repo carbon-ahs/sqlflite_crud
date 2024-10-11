@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // print("nbjngbv");
     return BlocProvider(
-      create: (context) => TodoBloc(Repository()),
+      create: (context) => TodoBloc(Repository())..add(GetAllTodoEvent()),
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(

@@ -31,26 +31,26 @@ final class FailureState extends TodoState {
   List<Object> get props => [errorMessage];
 }
 
-// //Get Todo by ID
-// final class GetTodoByIdState extends TodoState {
-//   final Todos todos;
-//   const GetTodoByIdState(this.todos);
-//   @override
-//   List<Object?> get props => [todos];
-// }
+//Get Todo by ID
+final class GetTodoByIdState extends TodoState {
+  final Todos todos;
+  const GetTodoByIdState(this.todos);
+  @override
+  List<Object> get props => [todos];
+}
 
-// //Success Todo Add Insertion
-// final class SuccessTodoInsertion extends TodoState {
-//   @override
-//   List<Object?> get props => [];
-// }
+//Success Todo Add Insertion
+final class SuccessTodoInsertion extends TodoState {
+  @override
+  List<Object> get props => [];
+}
 
-// final class SuccessTodoUpdate extends TodoState {
-//   @override
-//   List<Object?> get props => [];
-// }
+final class SuccessTodoUpdate extends TodoState {
+  @override
+  List<Object> get props => [];
+}
 
-// final class SuccessTodoDelete extends TodoState {
-//   @override
-//   List<Object?> get props => [];
-// }
+final class SuccessTodoDelete extends TodoState {
+  @override
+  List<Object> get props => [];
+}

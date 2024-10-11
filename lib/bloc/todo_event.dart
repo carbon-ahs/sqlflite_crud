@@ -22,25 +22,25 @@ class AddTodoEvent extends TodoEvent {
 }
 
 //Update todo Event
-class UpdatetodoEvent extends TodoEvent {
+class UpdateTodoEvent extends TodoEvent {
   final Todos todos;
-  const UpdatetodoEvent(this.todos);
+  const UpdateTodoEvent(this.todos);
   @override
   List<Object> get props => [todos];
 }
 
 //Delete todo Event
-class DeletetodoEvent extends TodoEvent {
+class DeleteTodoEvent extends TodoEvent {
   final int id;
-  const DeletetodoEvent(this.id);
+  const DeleteTodoEvent(this.id);
   @override
   List<Object> get props => [id];
 }
 
 //Get todo By ID
-class GettodoByIdEvent extends TodoEvent {
+class GetTodoByIdEvent extends TodoEvent {
   final int id;
-  const GettodoByIdEvent(this.id);
+  const GetTodoByIdEvent(this.id);
   @override
   List<Object> get props => [id];
 }
